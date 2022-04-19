@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link type="text/css" href="./CSS/style.css" rel="stylesheet" />
+    <script src="./JS/function.js"></script>
+  </head>
+  <body onload="init()" onkeyup="input()">
+    <div id="calculator">
+      <p id="display">0</p>
+      <form action="#" method="get">
+        <p>
+          <input type="button" value="DEL" class="delete" onclick="del()" />
+          <input type="button" value="C" class="delete" onclick="clearAll()" />
+        </p>
+        <p>
+          <input type="button" value="7" class="numbers" onclick="key('7')" />
+          <input type="button" value="8" class="numbers" onclick="key('8')" />
+          <input type="button" value="9" class="numbers" onclick="key('9')" />
+          <input type="button" value="/" class="numbers" onclick="op('/')" />
+          <input type="button" value="x^2" class="numbers" onclick="squar()" />
+          <input type="button" value="e" class="numbers" onclick="euler()" />
+        </p>
+        <p>
+          <input type="button" value="4" class="numbers" onclick="key('4')" />
+          <input type="button" value="5" class="numbers" onclick="key('5')" />
+          <input type="button" value="6" class="numbers" onclick="key('6')" />
+          <input type="button" value="*" class="numbers" onclick="op('*')" />
+          <input type="button" value="SQRT" class="numbers" onclick="root()" />
+          <input type="button" value="+/-" class="numbers" onclick="oppos()" />
+        </p>
+        <p>
+          <input type="button" value="1" class="numbers" onclick="key('1')" />
+          <input type="button" value="2" class="numbers" onclick="key('2')" />
+          <input type="button" value="3" class="numbers" onclick="key('3')" />
+          <input type="button" value="+" class="numbers" onclick="op('+')" />
+          <input type="button" value="%" class="numbers" onclick="percent()" />
+          <input type="button" value="1/x" class="numbers" onclick="invert()" />
+        </p>
+        <p>
+          <input type="button" value="0" class="numbers" onclick="key('0')" />
+          <input type="button" value="." class="numbers" onclick="key('.')" />
+          <input type="button" value="=" id="equal" onclick="solve()" />
+          <input type="button" value="-" class="numbers" onclick="op('-')" />
+          <input type="button" value="mod" class="numbers" onclick="op('%')" />
+          <input type="button" value="log" class="numbers" onclick="logar()" />
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
