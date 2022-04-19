@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form - JAFP</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+          obcaecati quo.
+        </p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <div id="name-div">
+            <label id="name-label" for="name">Name:</label><br />
+            <input
+              id="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div id="email-div">
+            <label id="email-label" for="email">Email:</label><br />
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+              pattern="^[^@]+@[^@]+\.+(com|net|es|org)+$"
+              title="Enter an email like the example: someone@someone.com|net|es|org"
+            />
+          </div>
+          <div id="number-div">
+            <label id="number-label" for="number">Age:</label>
+            <input
+              id="number"
+              type="number"
+              placeholder="Enter your age"
+              required
+              min="18"
+              max="120"
+            />
+          </div>
+          <div id="dropdown-div">
+            <label id="dropdown-label" for="name">Are you Married?</label>
+            <select id="dropdown" type="dropdown">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div id="radio-div">
+            <label>Do you have children?</label>
+            <input type="radio" name="radio" value="yes" />
+            <span class="radio">Yes</span>
+            <input type="radio" name="radio" value="no" />
+            <span class="radio">No</span>
+          </div>
+          <div id="text-div">
+            <label>Additional Comments:</label><br />
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+          <div id="check-div">
+            <input
+              type="checkbox"
+              name="notice"
+              id="notice"
+              required
+              value="legal notice"
+            />
+            <label for="notice">
+              I have read the <a href="#">Legal Notice</a> and accept its
+              conditions.
+            </label>
+            <br />
+            <input
+              type="checkbox"
+              name="data"
+              id="data"
+              required
+              value="personal data"
+            />
+            <label for="data">I accept the sending of my personal data</label>
+          </div>
+          <div id="submit-div">
+            <input type="submit" value="Submit" id="submit" />
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

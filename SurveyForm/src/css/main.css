@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;300&family=Oswald:wght@500&display=swap");
+body {
+  font-family: "Blinker", sans-serif;
+  font-size: medium;
+  background-color: #7071752d;
+}
+
+body #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #container header p {
+  margin-top: -10px;
+  font-size: large;
+}
+
+body #container div {
+  margin-top: 15px;
+}
+
+body #container form {
+  background-color: #50c52244;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+body #container form label {
+  font-size: larger;
+}
+
+body #container form #name,
+body #container form #email {
+  height: 30px;
+}
+
+body #container form #name,
+body #container form #email,
+body #container form #textarea {
+  width: 450px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+body #container form #number,
+body #container form #dropdown {
+  width: 150px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+body #container form .radio {
+  font-size: large;
+}
+
+body #container form #submit {
+  width: 450px;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: medium;
+  background-color: #ff080877;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+body #container form a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

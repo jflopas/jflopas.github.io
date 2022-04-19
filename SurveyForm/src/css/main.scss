@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;300&family=Oswald:wght@500&display=swap");
+
+$colors: (
+  form: #50c52244,
+  button: #ff080877,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+body {
+  font-family: "Blinker", sans-serif;
+  font-size: medium;
+  background-color: #7071752d;
+
+  #container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        margin-top: -10px;
+        font-size: large;
+      }
+    }
+
+    div {
+      margin-top: 15px;
+    }
+
+    form {
+      background-color: color(form);
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+
+      label {
+        font-size: larger;
+      }
+
+      #name,
+      #email {
+        height: 30px;
+      }
+
+      #name,
+      #email,
+      #textarea {
+        width: 450px;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-size: medium;
+      }
+
+      #number,
+      #dropdown {
+        width: 150px;
+        margin-left: 5px;
+        border-radius: 5px;
+        font-size: medium;
+      }
+
+      .radio {
+        font-size: large;
+      }
+
+      #submit {
+        width: 450px;
+        border-radius: 10px;
+        padding: 5px;
+        font-size: medium;
+        background-color: color(button);
+        cursor: pointer;
+        border: 1px solid black;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
