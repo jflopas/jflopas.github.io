@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jafp31.000webhostapp.com/sitemap.xml

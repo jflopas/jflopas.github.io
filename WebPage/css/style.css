@@ -1,0 +1,521 @@
+/* FUENTES */
+@font-face {
+  font-family: "TrebuchetMS";
+  src: url("../fonts/TrebuchetMS.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "websymbols-regular-webfont";
+  src: url("../fonts/websymbols-regular-webfont.eot");
+  src: url("../fonts/websymbols-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular")
+      format("svg"),
+    url("../fonts/websymbols-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* GENERAL */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("../img/pattern.png");
+}
+
+#header {
+  width: 100%;
+  height: 70px;
+  background: black;
+  color: white;
+  font-family: "BebasNeue";
+}
+.wrap {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+/* LOGO */
+
+.gear {
+  font-family: "websymbols-regular-webfont";
+}
+#logo {
+  float: left;
+  width: 200px;
+  background-color: #38bcf9;
+  text-align: center;
+  margin-top: 8px;
+  margin-left: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 300ms;
+}
+#logo h3 {
+  display: block;
+  float: right;
+  font-size: 40px;
+  margin-top: 5px;
+  margin-right: 65px;
+  transition: all 300ms;
+}
+#logo .gear {
+  display: block;
+  float: left;
+  font-size: 30px;
+  margin-top: 8px;
+  margin-left: 26px;
+}
+/* MENU */
+#menu {
+  float: right;
+  height: 70px;
+  background-color: transparent;
+}
+#menu ul li {
+  font-size: 24px;
+  display: inline-block;
+  margin: 0px 20px 0px 20px;
+  letter-spacing: 1px;
+  line-height: 70px;
+}
+#menu ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: all 200ms;
+}
+#menu ul li a:hover {
+  color: #38bcf9;
+
+  transform: scale(1.2);
+}
+#banner {
+  width: 95.5%;
+  height: 100px;
+  border: 10px solid white;
+  background-image: url("../img/bakbaner.png");
+  background-position: -200px -200px;
+  box-shadow: 0 0 2px gray;
+  margin: 20px auto;
+}
+#banner h1 {
+  display: block;
+  width: 450px;
+  font-family: "BebasNeue";
+  color: white;
+  font-size: 45px;
+  letter-spacing: 2px;
+  margin: 27px auto;
+  text-shadow: 2px 2px 1px black;
+  font-weight: normal;
+}
+.card {
+  float: left;
+  width: 204px;
+  height: 305px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 2px #ddd;
+  background-color: white;
+  overflow: hidden;
+  margin: 19px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+.card .icon {
+  font-family: "websymbols-regular-webfont";
+  display: block;
+  width: 100%;
+  height: 130px;
+  font-size: 50px;
+  line-height: 130px;
+  text-align: center;
+  transition: all 300ms;
+}
+.card .category {
+  width: 100%;
+  height: 50px;
+  font-family: "TrebuchetMS";
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: #22539e;
+  transition: all 300ms;
+}
+.card .description {
+  font-family: "TrebuchetMS";
+  font-size: 15px;
+  text-align: center;
+  color: #45629e;
+  transition: all 300ms;
+}
+
+/* MENU LAETAL */
+.icon {
+  font-family: "websymbols-regular-webfont";
+}
+#lateral {
+  width: 300px;
+  min-height: 1200px;
+  font-family: "TrebuchetMS";
+  float: right;
+  margin: 20px;
+  margin-top: 100px;
+}
+#lateral h3 {
+  display: block;
+  width: auto;
+  height: 45px;
+  line-height: 49px;
+  background-image: url("../img/pxgray.png");
+  box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f,
+    3px 4px 0px #393d3f;
+  font-size: 30px;
+  font-family: "BebasNeue";
+  font-weight: normal;
+  letter-spacing: 2px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+#search {
+  width: 90%;
+  height: 30px;
+  margin: 10px auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #ccc inset;
+}
+#lateral input[type="text"] {
+  width: 85%;
+  height: 30px;
+  border: none;
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ccc;
+  outline: none;
+  transition: all 300ms;
+}
+#lateral input[type="button"] #lateral input[type="text"] {
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  border-left: 1px solid #ccc;
+  padding-left: 6px;
+  outline: none;
+}
+
+.aside-box {
+  width: 85%;
+  height: 240px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 2px;
+  background-color: white;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3), 1px 3px 7px rgba(0, 0, 0, 0.3),
+    0px 1px white inset, 0px -3px 2px rgba(0, 0, 0, 0.3) inset;
+}
+#login input[type="email"],
+#login input[type="password"] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 82%;
+  height: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc inset;
+  border-radius: 5px;
+  padding-left: 30px;
+  color: gray;
+  outline: none;
+}
+#login #user,
+#login #password {
+  text-align: center;
+  display: block;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 6px;
+  height: 30px;
+}
+#login #password {
+  margin-left: 18px;
+  margin-top: 25px;
+  font-size: 20px;
+}
+#login input[type="submit"],
+#login input[type="button"],
+#login input[type="reset"],
+#login button {
+  text-align: center;
+  width: 100px;
+  height: 35px;
+  margin-top: 20px;
+
+  color: white;
+  background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+  outline: none;
+  border: 1px solid #156785;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "TrebuchetMS";
+  font-weight: lighter;
+  margin-left: 17px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  transition: all 300ms;
+}
+#login a {
+  display: block;
+  margin-left: 10px;
+}
+
+#social {
+  height: 190px;
+}
+#social a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+#social .overlay {
+  display: block;
+  height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #ccc;
+  border: 3px solid white;
+  box-shadow: 0 0 4px #ccc;
+  background-color: #f4f7fe;
+  position: absolute;
+  padding: 5px;
+  margin-left: 70px;
+  margin-top: -52px;
+  cursor: pointer;
+  transform: translateX(-80%);
+  opacity: 0;
+  transition: all 400ms;
+}
+#social div:hover .overlay {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+/* FIN MENU LATERAL */
+
+/* ARTICULOS */
+#articles {
+  width: 860px;
+  float: left;
+}
+#articles h2 {
+  display: block;
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  font-family: "BebasNeue";
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  background-image: url("../img/pxgray.png");
+  box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f,
+    3px 4px 0px #393d3f;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+#articles article {
+  width: 98%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin: 40px auto;
+  padding: 10px;
+  font-family: "TrebuchetMS";
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 2px #ddd;
+}
+#articles article h4 {
+  display: block;
+  font-size: 23px;
+  margin: 3px;
+}
+#articles .data {
+  float: right;
+  background-color: #393d3f;
+  color: white;
+  height: 30px;
+  line-height: 30px;
+  margin: -10px;
+  padding: 4px;
+  font-size: 13px;
+  border-radius: 0 0 0 5px;
+}
+#articles .data span {
+  margin: 6px;
+}
+#articles article p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-align: justify;
+}
+#articles article h4 a {
+  text-decoration: none;
+  color: #00538c;
+}
+
+/* BLOG */
+
+#blog {
+  height: 100px;
+  margin-top: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: all 1s;
+}
+#blog a {
+  display: block;
+  font-family: "BebasNeue";
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: #00538c;
+  text-decoration: none;
+}
+#blog:hover {
+  background-color: #333;
+  border: 10px solid #37bcf9;
+  border-radius: 240px;
+  box-shadow: 0 0 10px gray;
+  animation-name: blink;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  height: 42px;
+  transition: all 1s;
+}
+#blog:hover a {
+  color: white;
+  text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black,
+    1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black;
+  transform: translate(-10px, -10px);
+}
+@keyframes blink {
+  0% {
+    border: 10px solid #37bbf9f3;
+  }
+  25% {
+    border: 10px solid rgba(0, 128, 0, 0.918);
+  }
+  50% {
+    border: 10px solid rgba(255, 255, 0, 0.897);
+  }
+  75% {
+    border: 10px solid rgba(255, 255, 255, 0.973);
+  }
+  100% {
+    border: 10px solid #37bbf9ee;
+  }
+}
+
+#articles article h4 a:hover {
+  text-decoration: underline;
+}
+#lateral h3:first-child {
+  margin-top: 0px;
+}
+
+/* FOOOTER */
+#footer {
+  width: 100%;
+  height: 470px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+#footer .wrap > div {
+  float: left;
+  width: 320px;
+  height: 370px;
+  margin: 40px;
+  text-align: center;
+  color: white;
+  font-family: "TrebuchetMS";
+}
+#footer a {
+  text-decoration: none;
+  color: #38bcf9;
+  transition: all 300ms;
+}
+
+#footer h5 {
+  display: block;
+  background: url("../img/pxgray.png"), white;
+  height: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: "BevasNeue";
+  font-size: 40px;
+  line-height: 55px;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+#footer ul {
+  text-align: left;
+  margin: 20px;
+  font-size: 25px;
+}
+#footer ul li {
+  margin-top: 10px;
+  padding: 5px;
+  border-bottom: 1px #ccc;
+}
+#footer ul li a {
+  display: block;
+  height: 40px;
+  transition: all 300ms;
+}
+#footer ul li:hover a {
+  padding-left: 40px;
+  color: white;
+}
+#footer iframe {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 5px solid white;
+  box-shadow: 0 0 5px gray;
+}
+#footer img {
+  margin-bottom: 15px;
+}
+#footer #browsers img {
+  width: 45px;
+}

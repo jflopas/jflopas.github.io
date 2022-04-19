@@ -1,0 +1,183 @@
+#logo .gear {
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear {
+    from {
+        transform: rotateZ(0deg);
+        
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#logo:hover {
+    color: black;
+    background-color: #ccc;
+    border-radius: 2px;
+
+}
+
+#logo:hover .gear {
+    animation-name: fromBelow;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+
+}
+
+@keyframes fromBelow {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(200%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#logo:hover h3 {
+    animation-name: fromRight;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+
+}
+
+@keyframes fromRight {
+    from {
+        transform: translateX(200%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+
+}
+
+/*Banner*/
+
+#banner {
+    animation-name: backBanner;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+
+@keyframes backBanner {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    50% {
+        background-position: -200px -200px;
+    }
+
+    100% {
+        background-position: 0px 0px;
+    }
+
+}
+
+/*Texto del banner*/
+#banner h1 {
+    animation: showText 10s linear;
+}
+
+@keyframes showText {
+    0% {
+        transform: translateX(-600%) scale(5, 5);
+        opacity: 1;
+
+    }
+
+    50% {
+        transform: translateX(600%) scale(5, 5);
+        opacity: 1;
+
+    }
+
+    75% {
+        transform: translateX(-600%) scale(5, 5);
+        color: transparent;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) scale(1, 1);
+        opacity: 1;
+        color: white;
+        text-shadow: 2px 2px 1px black;
+    }
+
+}
+
+/*tarjetas*/
+.card {
+    transition: all 300ms;
+}
+
+.card:hover {
+    background-color: black;
+}
+
+.card .icon {
+    transition: all 300ms;
+}
+
+.card:hover .icon {
+    animation: showIcon 400ms linear;
+    font-size: 4em;
+    color: #37bcf9;
+}
+
+@keyframes showIcon {
+        from{
+            transform: translateY(-200%);
+        }
+        to{
+            transform: translateY(0);
+        }
+}
+
+.card:hover .category{
+    color: white;
+    animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory {
+    from{
+        transform: translateY(-300%);
+        color: black;
+    }
+    to{
+        transform: translateY(0);
+        color: white;
+    }
+}
+
+.card:hover .description{
+    color: #37bcf9;
+    animation: showDesc 400ms linear;
+}
+
+@keyframes showDesc {
+    from{
+        transform: translateX(-300%);
+        color: transparent;
+    }
+    to{
+        transform: translateX(0);
+        color: #37bcf9;
+    }
+}
