@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build a Technical Documentation Page - JAFP</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <nav id="navbar">
+        <header>
+          <h1>Java Documentation</h1>
+        </header>
+        <ul>
+          <li><a class="nav-link" href="#introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#variables">Variables</a></li>
+          <li><a class="nav-link" href="#operators">Operators</a></li>
+          <li><a class="nav-link" href="#strings">Strings</a></li>
+          <li><a class="nav-link" href="#math">Math</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="introduction">
+          <header><h1>Introduction</h1></header>
+          <div class="text">
+            <p><strong>What is Java?</strong></p>
+            <p>
+              Java is a popular programming language, created in 1995. It is
+              owned by Oracle, and more than 3 billion devices run Java.
+            </p>
+            <p>It is used for:</p>
+            <ul>
+              <li>Mobile applications (specially Android apps)</li>
+              <li>Desktop applications</li>
+              <li>Web applications</li>
+              <li>Web servers and application servers</li>
+              <li>Games</li>
+              <li>Database connection</li>
+            </ul>
+            <p><strong>Why Use Java?</strong></p>
+            <p>
+              Java works on different platforms (Windows, Mac, Linux, Raspberry
+              Pi, etc.). It is one of the most popular programming language in
+              the world. It is easy to learn and simple to use. It is
+              open-source and free. It is secure, fast and powerful. It has a
+              huge community support (tens of millions of developers).
+            </p>
+            <p>
+              Java is an object oriented language which gives a clear structure
+              to programs and allows code to be reused, lowering development
+              costs. As Java is close to C++ and C#, it makes it easy for
+              programmers to switch to Java or vice versa.
+            </p>
+            <p><strong>Example Hello World in Java</strong></p>
+            <code>
+              <pre>
+  public class Main {
+    public static void main(String[] args) { 
+      System.out.println("Hello World"); 
+    } 
+  }
+              </pre>
+            </code>
+          </div>
+        </section>
+        <section class="main-section" id="variables">
+          <header><h1>Variables</h1></header>
+          <div class="text">
+            <p>Variables are containers for storing data values.</p>
+            <p>In Java, there are different types of variables, for example:</p>
+            <ul>
+              <li>
+                <strong>String</strong> - stores text, such as "Hello". String
+                values are surrounded by double quotes
+              </li>
+              <li>
+                <strong>int</strong> - stores integers (whole numbers), without
+                decimals, such as 123 or -123
+              </li>
+              <li>
+                <strong>float</strong> - stores floating point numbers, with
+                decimals, such as 19.99 or -19.99
+              </li>
+              <li>
+                <strong>char</strong> - stores single characters, such as 'a' or
+                'B'. Char values are surrounded by single quotes
+              </li>
+              <li>
+                <strong>boolean</strong> - stores values with two states: true
+                or false
+              </li>
+            </ul>
+            <p><strong>Declaring (Creating) Variables</strong></p>
+            <p>
+              To create a variable, you must specify the type and assign it a
+              value:
+            </p>
+            <code>
+              <pre>
+  type variableName = value;
+              </pre>
+            </code>
+            <p>
+              Where <em>type</em> is one of Java's types (such as <b>int</b> or
+              <b>String</b>), and <em>variableName</em> is the name of the
+              variable (such as x or name). The <b>equal sign</b> is used to
+              assign values to the variable.
+            </p>
+            <p>A demonstration of how to declare variables of all types:</p>
+            <code>
+              <pre>
+  int myNum = 5;
+  float myFloatNum = 5.99f;
+  char myLetter = 'D';
+  boolean myBool = true;
+  String myText = "Hello";
+              </pre>
+            </code>
+          </div>
+        </section>
+        <section class="main-section" id="operators">
+          <header><h1>Operators</h1></header>
+          <div class="text">
+            <p>
+              Operators are used to perform operations on variables and values.
+            </p>
+            <p>
+              In the example below, we use the <strong>+</strong> operator to
+              add together two values:
+            </p>
+            <code>
+              <pre>
+  int x = 100 + 50; 
+              </pre>
+            </code>
+            <p>
+              Although the <strong>+</strong> operator is often used to add
+              together two values, like in the example above, it can also be
+              used to add together a variable and a value, or a variable and
+              another variable:
+            </p>
+            <code>
+              <pre>
+  int sum1 = 100 + 50;        // 150 (100 + 50)
+  int sum2 = sum1 + 250;      // 400 (150 + 250)
+  int sum3 = sum2 + sum2;     // 800 (400 + 400)
+              </pre>
+            </code>
+            <p>Java divides the operators into the following groups:</p>
+            <ul>
+              <li>Arithmetic operators</li>
+              <li>Assignment operators</li>
+              <li>Comparison operators</li>
+              <li>Logical operators</li>
+              <li>Bitwise operators</li>
+            </ul>
+            <p><strong>Arithmetic Operators</strong></p>
+            <p>
+              Arithmetic operators are used to perform common mathematical
+              operations.
+            </p>
+            <p>Example:</p>
+            <code>
+              <pre>
+  x + y  // Adds together two values
+  x - y  // Subtracts one value from another
+  x * y  // Multiplies two values
+  x / y  // Divides one value by another
+  x % y  // Returns the division remainder
+  ++x    // Increases the value of a variable by 1
+  --x    // Decreases the value of a variable by 1
+              </pre>
+            </code>
+            <p><strong>Assignment Operators</strong></p>
+            <p>
+              Assignment operators are used to assign values to variables. In
+              the example below, we use the assignment operator (=) to assign
+              the value 10 to a variable called x:
+            </p>
+            <code>
+              <pre>
+  int x = 10;
+              </pre>
+            </code>
+            <p>
+              The <b>addition assignment</b> operator (+=) adds a value to a
+              variable:
+            </p>
+            <code>
+              <pre>
+  int x = 10;
+  x += 5;
+              </pre>
+            </code>
+            <p><strong>Comparison Operators</strong></p>
+            <p>Comparison operators are used to compare two values:</p>
+            <code>
+              <pre>
+  x == y    // Equal to
+  x != y    // Not equal
+  x > y     // Greater than
+  x &lt; y     // Less than
+  x >= y    // Greater than or equal to
+  x &lt;= y    // Less than or equal to
+              </pre>
+            </code>
+            <p><strong>Logical Operators</strong></p>
+            <p>
+              Logical operators are used to determine the logic between
+              variables or values:
+            </p>
+            <code>
+              <pre>
+  x &lt; 5 && x &lt; 10     // Returns true if both statements are true
+  x &lt; 5 || x &lt; 4      // Returns true if one of the statements is true
+  !(x &lt; 5 && x &lt; 10)  // Reverse the result, returns false if the result is true
+              </pre>
+            </code>
+          </div>
+        </section>
+        <section class="main-section" id="strings">
+          <header><h1>Strings</h1></header>
+          <div class="text">
+            <p>Strings are used for storing text.</p>
+            <p>
+              A <b>String</b> variable contains a collection of characters
+              surrounded by double quotes:
+            </p>
+            <code>
+              <pre>
+  String greeting = "Hello";
+              </pre>
+            </code>
+            <p><strong>String Length</strong></p>
+            <p>
+              A String in Java is actually an object, which contain methods that
+              can perform certain operations on strings. For example, the length
+              of a string can be found with the <b>length()</b> method:
+            </p>
+            <code>
+              <pre>
+  String txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  System.out.println("The length of the txt string is: " + txt.length());
+              </pre>
+            </code>
+            <p><strong>More String Methods</strong></p>
+            <p>
+              There are many string methods available, for example
+              <b>toUpperCase()</b> and <b>toLowerCase()</b>:
+            </p>
+            <code>
+              <pre>
+  String txt = "Hello World";
+  System.out.println(txt.toUpperCase());   // Outputs "HELLO WORLD"
+  System.out.println(txt.toLowerCase());   // Outputs "hello world"
+              </pre>
+            </code>
+            <p><strong>Finding a Character in a String</strong></p>
+            <p>
+              The <b>indexOf()</b> method returns the index (the position) of
+              the first occurrence of a specified text in a string (including
+              whitespace):
+            </p>
+            <code>
+              <pre>
+  String txt = "Please locate where 'locate' occurs!";
+  System.out.println(txt.indexOf("locate")); // Outputs 7
+              </pre>
+            </code>
+          </div>
+        </section>
+        <section class="main-section" id="math">
+          <header><h1>Math</h1></header>
+          <div class="text">
+            <p>
+              The Java Math class has many methods that allows you to perform
+              mathematical tasks on numbers.
+            </p>
+            <p><strong>Math.max(x,y)</strong></p>
+            <p>
+              The <b>Math.max(x,y)</b> method can be used to find the highest
+              value of <em>x</em> and <em>y</em>:
+            </p>
+            <code>
+              <pre>
+  Math.max(5, 10);
+              </pre>
+            </code>
+            <p><strong>Math.min(x,y)</strong></p>
+            <p>
+              The <b>Math.min(x,y)</b> method can be used to find the lowest
+              value of <em>x</em> and <em>y</em>:
+            </p>
+            <code>
+              <pre>
+  Math.min(5, 10);
+              </pre>
+            </code>
+            <p><strong>Math.sqrt(x)</strong></p>
+            <p>
+              The <b>Math.sqrt(x)</b> method returns the square root of
+              <em>x</em>:
+            </p>
+            <code>
+              <pre>
+  Math.sqrt(64);
+              </pre>
+            </code>
+            <p><strong>Math.abs(x)</strong></p>
+            <p>
+              The <b>Math.abs(x)</b> method returns the absolute (positive) root
+              of <em>x</em>:
+            </p>
+            <code>
+              <pre>
+  Math.abs(-4.7);
+              </pre>
+            </code>
+            <p><strong>Random Numbers</strong></p>
+            <p>
+              <b>Math.random()</b> returns a random number between 0.0
+              (inclusive), and 1.0 (exclusive):
+            </p>
+            <code>
+              <pre>
+  Math.random();
+              </pre>
+            </code>
+            <p>
+              To get more control over the random number, e.g. you only want a
+              random number between 0 and 100, you can use the following
+              formula:
+            </p>
+            <code>
+              <pre>
+  int randomNum = (int)(Math.random() * 101);  // 0 to 100
+              </pre>
+            </code>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
