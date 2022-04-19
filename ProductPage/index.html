@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page - JAFP</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header id="header">
+        <img id="header-img" src="./src/img/logo.jpg" />
+
+        <nav id="nav-bar">
+          <div id="nav-links">
+            <a href="#services" class="nav-link">Servicios</a>
+            <a href="#contact" class="nav-link">Contacto</a>
+            <a href="#products" class="nav-link">Productos</a>
+          </div>
+        </nav>
+      </header>
+      <main id="main">
+        <section id="services">
+          <h1 class="titles">Servicios:</h1>
+          <div class="service">
+            <img id="header-img" src="./src/img/torre.png" />
+            <h2>Personaliza tu PC</h2>
+            <p>
+              Tenemos a expertos que te ayudarán a elegir los componentes
+              necesarios para tener el PC de tus sueños.
+            </p>
+          </div>
+          <div class="service">
+            <img id="header-img" src="./src/img/ventilador.png" />
+            <h2>Repuestos de calidad</h2>
+            <p>
+              Tenemos un catálogo lleno de repuestos de alta calidad. Fabricados
+              por las principales marcas.
+            </p>
+          </div>
+          <div class="service">
+            <img id="header-img" src="./src/img/camion.png" />
+            <h2>Entrega 24/48 horas</h2>
+            <p>
+              Nada más realizar tu pedido, nos pondremos a empacarlo y lo
+              enviaremos en el mismo día para que al día siguiente lo tengas en
+              tus manos.
+            </p>
+          </div>
+          <div>
+            <iframe
+              id="video"
+              width="420"
+              height="315"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            >
+            </iframe>
+          </div>
+        </section>
+        <h1 class="titles">Contacto:</h1>
+        <section id="contact">
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <p>
+              Introduce tu email y nosotros nos pondremos en contacto contigo
+            </p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              type="text"
+              placeholder="Enter a email address"
+            />
+            <br />
+            <input id="submit" type="submit" value="Submit" />
+          </form>
+        </section>
+        <section id="products">
+          <h1 class="titles">Nuestros productos:</h1>
+          <div class="product">
+            <h2>Cajas/Carcasas PC</h2>
+            <p>
+              ¿La caja de tu torre parece sacada del renacimiento? No te
+              preocupes, aquí te mostramos una selección de las más ergonómicas
+              y ligeras carcasas para tu pc de sobremesa
+            </p>
+            <img src="./src/img/carcasa.png" />
+          </div>
+          <div class="product">
+            <h2>Fuentes de Alimentación</h2>
+            <p>
+              ¿Tu ordenador se reinicia sin explicación? Ya te va haciendo falta
+              cambiar la fuente de alimentación, así que mírate esta selección
+              que las tenemos de todos los tipos.
+            </p>
+            <img src="./src/img/fuente.png" />
+          </div>
+          <div class="product">
+            <h2>Ordenadores Nuevos</h2>
+            <p>
+              Tira ya ese viejo trasto y alucina con la cantidad de ordenadores
+              que tenemos para ti.
+            </p>
+            <img src="./src/img/ordenador.png" />
+          </div>
+          <div class="product">
+            <h2>Periféricos</h2>
+            <p>
+              Teclados, ratones, auriculares y monitores. Si tienes las teclas
+              AWSD de tu teclado desgastadas, esta es tu sección.
+            </p>
+            <img src="./src/img/periferico.png" />
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

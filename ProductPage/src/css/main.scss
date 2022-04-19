@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+
+$colors: (
+  general: #555b6e,
+  title: #89b0ae,
+  link: #faf9f9,
+  back: #bee3db,
+  general-dark: darken(#555b6e, 20%),
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+@media (max-width: 610px) {
+  header {
+    flex-wrap: wrap;
+
+    .img {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+    }
+    #nav-bar {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      padding: 0 50px;
+      #nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 5px;
+
+        .nav-link {
+          border: 0.5px solid color(general-dark);
+          min-width: 80px;
+        }
+      }
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+
+    #services {
+      .service {
+        p {
+          width: 70%;
+          margin: 0 auto;
+          padding-bottom: 20px;
+        }
+      }
+      #video {
+        background-color: color(back);
+        border: none;
+        padding: 50px;
+        border: 5px solid color(general);
+        border-radius: 20px;
+        margin: 20px 0;
+        width: 50%;
+      }
+    }
+  }
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+
+  #container {
+    display: flex;
+    justify-content: center;
+    a {
+      color: color(link);
+      text-decoration: none;
+    }
+
+    header {
+      background-color: color(general);
+      position: fixed;
+      top: 0;
+      padding: 10px;
+      min-height: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      #nav-links {
+        display: flex;
+        justify-content: flex-end;
+        width: 35vw;
+
+        .nav-link {
+          border-left: 1px solid color(general-dark);
+          padding: 20px;
+        }
+
+        .nav-link:hover {
+          background-color: color(general-dark);
+        }
+        .nav-link:last-child {
+          border-right: 1px solid color(general-dark);
+        }
+      }
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 100px;
+
+      .titles {
+        color: color(title);
+        font-size: 50px;
+        text-transform: uppercase;
+      }
+
+      #services {
+        .service {
+          background-color: color(back);
+          width: 60%;
+          margin: 0 auto;
+          margin-top: 20px;
+          padding: 10px;
+          border-radius: 20px;
+          border: 5px solid color(general);
+
+          p {
+            width: 70%;
+            margin: 0 auto;
+            padding-bottom: 20px;
+          }
+        }
+        #video {
+          background-color: color(back);
+          border: none;
+          padding: 50px;
+          border: 5px solid color(general);
+          border-radius: 20px;
+          margin: 20px 0;
+          width: 50%;
+        }
+      }
+
+      #contact {
+        background-color: color(back);
+        padding: 10px;
+        width: 60%;
+        border-radius: 20px;
+        border: 5px solid color(general);
+
+        #email {
+          border-radius: 10px;
+          border: 0.5px solid color(general);
+          width: 50%;
+          min-width: max-content;
+          text-align: center;
+          font-size: medium;
+          height: 20px;
+          margin-bottom: 10px;
+        }
+        #email::-webkit-input-placeholder {
+          text-align: center;
+        }
+
+        #submit {
+          background-color: color(general);
+          border-radius: 10px;
+          padding: 8px;
+          width: 15%;
+          min-width: max-content;
+          font-size: medium;
+          cursor: pointer;
+          color: #faf9f9;
+        }
+        #submit:hover {
+          background-color: color(general-dark);
+        }
+      }
+
+      #products {
+        .product {
+          background-color: color(back);
+          width: 60%;
+          margin: 0 auto;
+          margin-top: 20px;
+          padding: 10px;
+          border-radius: 20px;
+          border: 5px solid color(general);
+
+          img {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
