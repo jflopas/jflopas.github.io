@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter - JAFP</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Counter</h1>
+      <div id="screen">0</div>
+      <div id="func">
+        <p>Setup:</p>
+        <div class="setup">
+          <input
+            type="button"
+            id="start"
+            class="btn"
+            value="Start"
+            onclick="start()"
+          />
+          <input type="button" class="btn" value="Pause" onclick="pause()" />
+          <input type="button" class="btn" value="Reset" onclick="reset()" />
+        </div>
+        <p>Count:</p>
+        <div class="setup">
+          <input
+            type="button"
+            class="btn"
+            value="Count Up"
+            onclick="oneMore()"
+          />
+          <input
+            type="button"
+            class="btn"
+            value="Count Down"
+            onclick="oneLess()"
+          />
+        </div>
+      </div>
+      <div id="conf">
+        <p>Set to:</p>
+        <input
+          type="number"
+          id="setTo"
+          value="0"
+          onclick="setTo()"
+          onkeyup="setTo()"
+        />
+        <p>Step:</p>
+        <input type="number" id="step" value="1" onclick="stepTo()" />
+      </div>
+    </div>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

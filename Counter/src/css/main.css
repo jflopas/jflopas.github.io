@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
+* {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#container {
+  width: 30%;
+}
+
+#container h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#container #screen {
+  font-size: 40px;
+  padding: 20px;
+  border: 1px solid black;
+  margin-left: 30px;
+  text-align: center;
+  border-radius: 10px;
+  min-height: 50px;
+}
+
+#container #func {
+  margin-left: 80px;
+}
+
+#container #func p {
+  font-size: 30px;
+}
+
+#container #func .setup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#container #func .setup .btn {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 0px;
+  cursor: pointer;
+  background-color: #eb5e28;
+  color: #fffcf2;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.37);
+          box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.37);
+  border: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+}
+
+#container #func .setup .btn:hover {
+  background-color: #cd4713;
+}
+
+#container #conf {
+  margin-left: 80px;
+}
+
+#container #conf p {
+  font-size: 30px;
+}
+
+#container #conf input {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #eb5e28;
+  margin-left: 80px;
+  text-align: center;
+}
+
+#container #conf input:focus {
+  outline: 0 none;
+  background-color: #fad8cb;
+  -webkit-box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
+          box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+}
+/*# sourceMappingURL=main.css.map */
