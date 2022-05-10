@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+$colors: (
+  back: #393d3f,
+  shadow: darken(#393d3f, 10%),
+  text-dark: darken(#393d3f, 20%),
+  text: #fdfdff,
+  header: #62929e,
+  box: #c6c5b9,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+* {
+  font-family: "Titillium Web", sans-serif;
+  background-color: color(back);
+  color: color(text);
+  margin: 0;
+}
+
+#container {
+  h1 {
+    text-align: center;
+    background-color: color(header);
+    font-size: 50px;
+    padding: 20px;
+    text-shadow: 2px 2px 2px color(back);
+    border-bottom: 5px solid color(text);
+    margin-bottom: 20px;
+  }
+  div {
+    h2 {
+      font-size: 40px;
+      margin: 30px 0px 20px 20px;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      a {
+        text-decoration: none;
+        li {
+          padding: 40px 20px 40px 20px;
+          background-color: color(box);
+          font-size: 20px;
+          width: 260px;
+          list-style: none;
+          text-align: center;
+          box-shadow: 0px 0px 15px 8px color(shadow);
+          cursor: pointer;
+          color: color(text-dark);
+        }
+        li:hover {
+          background-color: color(header);
+          color: color(text);
+        }
+      }
+    }
+  }
+  #footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: color(header);
+    font-size: 30px;
+    text-shadow: 2px 2px 2px color(back);
+    border-top: 5px solid color(text);
+    margin-top: 20px;
+    padding: 20px 0 20px;
+    width: 100%;
+  }
+}
