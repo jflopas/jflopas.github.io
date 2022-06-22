@@ -169,29 +169,11 @@ let uniUK = [
   "University of East Anglia",
   "University of Aberdeen",
 ];
-// The next three functions add the elements contained in the arrays to the list.
-function unisEspaña() {
-  let list = uniSpain
-    .sort()
-    .map(function (bar) {
-      return "<li><span class='shadow-drop'>" + bar + "</span></li>";
-    })
-    .join("");
-  document.getElementById("list").innerHTML = list;
-}
 
-function unisPortugal() {
-  let list = uniPortugal
-    .sort()
-    .map(function (bar) {
-      return "<li><span class='shadow-drop'>" + bar + "</span></li>";
-    })
-    .join("");
-  document.getElementById("list").innerHTML = list;
-}
+// This function add the elements contained in the arrays to the list.
 
-function unisUK() {
-  let list = uniUK
+function universitys(uni) {
+  let list = uni
     .sort()
     .map(function (bar) {
       return "<li><span class='shadow-drop'>" + bar + "</span></li>";
