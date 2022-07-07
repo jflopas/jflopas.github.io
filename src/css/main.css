@@ -6,7 +6,11 @@
   margin: 0;
 }
 
-#container h1 {
+html {
+  min-height: 100%;
+}
+
+html #container h1 {
   text-align: center;
   background-color: #62929e;
   font-size: 50px;
@@ -16,12 +20,12 @@
   margin-bottom: 20px;
 }
 
-#container div h2 {
+html #container div h2 {
   font-size: 40px;
   margin: 30px 0px 20px 20px;
 }
 
-#container div ul {
+html #container div ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,16 +36,18 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#container div ul a {
+html #container div ul a {
   text-decoration: none;
 }
 
-#container div ul a li {
+html #container div ul a li {
   padding: 40px 20px 40px 20px;
   background-color: #c6c5b9;
   font-size: 20px;
@@ -52,14 +58,17 @@
           box-shadow: 0px 0px 15px 8px #212324;
   cursor: pointer;
   color: #090909;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-#container div ul a li:hover {
+html #container div ul a li:hover {
   background-color: #62929e;
   color: #fdfdff;
 }
 
-#container #footer {
+html #container #footer {
+  position: absolute;
   text-align: center;
   background-color: #62929e;
   font-size: 30px;
