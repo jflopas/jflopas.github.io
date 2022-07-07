@@ -66,16 +66,4 @@ html #container div ul a li:hover {
   background-color: #62929e;
   color: #fdfdff;
 }
-
-html #container #footer {
-  position: absolute;
-  text-align: center;
-  background-color: #62929e;
-  font-size: 30px;
-  text-shadow: 2px 2px 2px #393d3f;
-  border-top: 5px solid #fdfdff;
-  margin-top: 40px;
-  padding: 20px 0 20px;
-  width: 100%;
-}
 /*# sourceMappingURL=main.css.map */
