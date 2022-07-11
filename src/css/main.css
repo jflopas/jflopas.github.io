@@ -45,6 +45,7 @@ html #container div ul {
 
 html #container div ul a {
   text-decoration: none;
+  margin-left: 20px;
 }
 
 html #container div ul a li {
